@@ -1,134 +1,16 @@
-Weather Forecasting App
+# React + Vite
 
-A responsive ReactJS-based weather forecasting application that provides real-time and historical weather insights using the Open-Meteo API. The app automatically detects the user's location using browser GPS and displays localized weather data with interactive charts.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-🚀 Live Demo
+Currently, two official plugins are available:
 
-https://weather-forcasting-black.vercel.app/
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-📌 Features
-📍 Auto Location Detection
-Uses browser Geolocation API
-Fetches weather data based on user's current location
-🧭 Pages Overview
-1️⃣ Current Weather & Hourly Forecast
-🌡️ Weather Metrics
-Current Temperature
-Min & Max Temperature
-Relative Humidity
-Precipitation
-UV Index
-🌅 Sun Cycle
-Sunrise
-Sunset
-🌬️ Wind & Air
-Max Wind Speed
-Precipitation Probability
-🌫️ Air Quality
-AQI
-PM10, PM2.5
-CO, CO₂
-NO₂, SO₂
-📊 Hourly Charts (Interactive)
-Temperature (°C ⇄ °F toggle)
-Relative Humidity
-Precipitation
-Visibility
-Wind Speed (10m)
-PM10 & PM2.5 (combined chart)
+## React Compiler
 
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Zoom In / Zoom Out
-Horizontal Scrolling
-Mobile Responsive
-2️⃣ Historical Weather Analysis (Max 2 Years)
-📅 Date Range Selection
-Users can select custom date ranges (up to 2 years)
-📈 Charts & Data
-Temperature (Min, Max, Mean)
-Sunrise & Sunset (IST)
-Precipitation (Total)
-Wind Speed & Direction
-PM10 & PM2.5 trends
-🛠️ Tech Stack
-Frontend
-React.js (v19)
-Vite
-React Router DOM
-Charts & Visualization
-ApexCharts
-React-ApexCharts
-Styling
-CSS / Tailwind (if used)
-API
-Open-Meteo API
-📁 Project Structure
-weather-forecasting/
-│
-├── public/
-├── src/
-│   ├── assets/
-│   │   ├── hero.png
-│   │   ├── react.svg
-│   │   └── vite.svg
-│   │
-│   ├── components/
-│   │   ├── MetricCard.jsx
-│   │   └── WeatherChart.jsx
-│   │
-│   ├── hooks/
-│   │   └── useGeolocation.js
-│   │
-│   ├── pages/
-│   │   ├── CurrentWeatherPage.jsx
-│   │   └── HistoricalPage.jsx
-│   │
-│   ├── services/
-│   │   └── openMeteo.js
-│   │
-│   ├── utils/
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-│
-├── package.json
-├── vite.config.js
-└── README.md
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/weather-forecasting.git
-cd weather-forecasting
-2️⃣ Install Dependencies
-npm install
-3️⃣ Run Development Server
-npm run dev
-4️⃣ Build for Production
-npm run build
-⚡ Performance Optimization
-Efficient API calls using optimized endpoints
-Lazy loading components
-Minimal re-renders with React hooks
-Fast rendering with Vite
+## Expanding the ESLint configuration
 
-⏱️ Target: < 500ms load time
-
-📱 Responsiveness
-Fully mobile-friendly design
-Adaptive charts
-Flexbox/Grid layout
-📊 Chart Features
-Interactive tooltips
-Zoom & pan
-Horizontal scrolling
-Dynamic datasets
-🔄 Temperature Toggle
-Switch between:
-Celsius (°C)
-Fahrenheit (°F)
-🌍 API Integration
-Uses Open-Meteo API for:
-Current weather
-Hourly forecast
-Historical data
-Air quality data
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
